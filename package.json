@@ -1,0 +1,41 @@
+{
+  "name": "gxt",
+  "version": "0.1.0",
+  "description": "GTA Text API",
+  "main": "./src/index.js",
+  "typings": "./typings/index.d.ts",
+  "private": true,
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TFNRP/gxt.git"
+  },
+  "keywords": [
+    "gta",
+    "gta5",
+    "gxt",
+    "gxt2",
+    "text"
+  ],
+  "author": "Reece Stokes <hagen@paw.bot>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/TFNRP/gxt/issues"
+  },
+  "homepage": "https://github.com/TFNRP/gxt#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "crc-32": "^1.2.1",
+    "fast-xml-parser": "^4.0.7"
+  }
+}
