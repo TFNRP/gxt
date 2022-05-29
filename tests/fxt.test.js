@@ -2,12 +2,13 @@ const FXT = require('../src/FXT');
 const fs = require('node:fs');
 const path = require('node:path');
 
-const data = fs.readFileSync(path.join(__dirname, 'english.fxt'));
+const data = fs.readFileSync(path.join(__dirname, 'assets', 'one.fxt'));
 const fxt = FXT(data);
 
 describe('FXT', () => {
   test('is expected size', () => {
-    expect(fxt.size).toBe(1_792);
+    // FXT format usually contains an empty property/value pair at the end, as the last value is always discarded.
+    expect(fxt.size).toBe(1_793);
   });
 
   test('data === export', () => {
